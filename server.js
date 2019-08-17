@@ -1,5 +1,9 @@
 const express = require('express');
+const connectDB = require('./config/db');
 const app = express();
+
+// connect to DB
+connectDB();
 
 // health route
 app.get('/_health', (req, res) =>
