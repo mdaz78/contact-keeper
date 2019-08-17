@@ -5,6 +5,9 @@ const app = express();
 // connect to DB
 connectDB();
 
+// Init middleware
+app.use(express.json({ extended: false }));
+
 // health route
 app.get('/_health', (req, res) =>
   res.json({
