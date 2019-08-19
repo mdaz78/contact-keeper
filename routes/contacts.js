@@ -62,7 +62,7 @@ router.post(
 // @route     PUT api/contacts/:id
 // @desc      Update contact
 // @access    private
-router.post('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   res.send('Update contact');
 });
 
