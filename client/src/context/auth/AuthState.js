@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import AuthContext from './authContext';
-import AuthReducer from './authReducer';
+import authReducer from './authReducer';
 import {
   REMOVE_ALERT,
   REGISTER_SUCCESS,
@@ -13,7 +13,7 @@ import {
   CLEAR_ERRORS,
 } from '../types';
 
-const ContactState = (props) => {
+const AuthState = (props) => {
   const initialState = {
     token: localStorage.getItem('token'),
     isAuthenticated: null,
