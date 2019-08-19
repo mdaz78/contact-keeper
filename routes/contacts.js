@@ -69,7 +69,7 @@ router.post('/:id', (req, res) => {
 // @route     DELETE api/contacts/:id
 // @desc      Delete contact
 // @access    private
-router.post('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
   res.send('Delete contact');
 });
 
