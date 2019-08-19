@@ -33,7 +33,6 @@ const Login = (props) => {
     if (email === '' || password === '') {
       setAlert('Please fill in all fields', 'danger');
     } else {
-      console.log('here');
       login({
         email,
         password,
